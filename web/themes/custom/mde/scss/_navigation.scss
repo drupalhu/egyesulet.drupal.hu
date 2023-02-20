@@ -1,0 +1,17 @@
+.navbar-nav {
+  li.nav-item {
+
+    a.nav-link {
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
+    &:hover {
+      background: lighten($dblue, 20%);
+    }
+  }
+}
+.navbar-expand .navbar-nav {
+  flex-direction: column;
+}

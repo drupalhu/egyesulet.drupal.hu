@@ -1,0 +1,25 @@
+uuid: 02c0afa3-4ee6-4749-ab5e-eb738862e4ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mde
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: mde_branding
+theme: mde
+region: nav_branding
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

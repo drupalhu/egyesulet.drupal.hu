@@ -1,0 +1,95 @@
+{%
+set nav_classes = 'navbar navbar-expand-lg' ~
+  (b4_navbar_schema != 'none' ? " navbar-#{b4_navbar_schema}" : ' ') ~
+  (b4_navbar_schema != 'none' ? (b4_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+  (b4_navbar_bg_schema != 'none' ? " bg-#{b4_navbar_bg_schema}" : ' ')
+%}
+
+{%
+set footer_classes = ' ' ~
+  (b4_footer_schema != 'none' ? " footer-#{b4_footer_schema}" : ' ') ~
+  (b4_footer_schema != 'none' ? (b4_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+  (b4_footer_bg_schema != 'none' ? " bg-#{b4_footer_bg_schema}" : ' ')
+%}
+<header>
+
+
+    <nav class="{{ nav_classes }}">
+      <div class="{{ b4_top_container }} row mx-auto">
+        <div class=" p-0">
+          {{ page.nav_branding }}
+        </div>
+        <div class="p-0 text-right navi">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col-12 p-0 justify-content-end" id="navbarSupportedContent">
+            {{ page.nav_main }}
+          </div>
+        </div>
+
+
+      </div>
+    </nav>
+  {{ page.header }}
+</header>
+
+<main role="main">
+  <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+  {%
+  set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
+  %}
+
+  {%
+  set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
+  %}
+
+  {%
+  set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' )
+   %}
+
+  <div class="container">
+  <div class="{{ b4_top_container }}">
+    {% if page.breadcrumb %}
+      {{ page.breadcrumb }}
+    {% endif %}
+    <div class="row no-gutters">
+      <section class="order-1 order-lg-2 {{ content_classes }}" id="intro">
+        {{ page.front_content1 }}
+      </section>
+
+      <section class="order-1 order-lg-2 {{ content_classes }}" id="board">
+        {{ page.front_content2 }}
+      </section>
+
+      <section class="order-1 order-lg-2 {{ content_classes }}" id="join">
+        {{ page.front_content3 }}
+      </section>
+
+      <section class="order-1 order-lg-2 {{ content_classes }}" id="benefits">
+        {{ page.front_content4 }}
+      </section>
+
+      <section class="order-1 order-lg-2 {{ content_classes }}" id="projects">
+        {{ page.front_content5 }}
+      </section>
+
+      <section class="order-1 order-lg-2 {{ content_classes }}" id="social">
+        {{ page.front_content6 }}
+      </section>
+    </div>
+    </div>
+  </div>
+
+</main>
+
+{% if page.footer %}
+<footer class="mt-auto {{ footer_classes }}">
+  <div class="{{ b4_top_container }}">
+    {{ page.footer }}
+  </div>
+</footer>
+{% endif %}

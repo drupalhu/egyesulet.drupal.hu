@@ -1,0 +1,13 @@
+// Include parent theme with all things Bootstrap for full override.
+// Relative path to this styles.scss file.
+// Example: @import "../../../../../themes/contrib/bootstrap4/scss/style";
+@import "../../../../themes/contrib/bootstrap4/scss/style";
+
+
+// Include custom sub theme.
+@import 'init';
+@import 'structure';
+@import 'views';
+@import 'navigation';
+@import 'elements';
+@import 'responsive';

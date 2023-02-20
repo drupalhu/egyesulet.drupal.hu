@@ -1,0 +1,30 @@
+uuid: 315b9aa6-bdad-4919-af8a-388d27a44663
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:13e8da21-3b41-4eef-97d6-46e303efe343'
+  module:
+    - block_content
+    - system
+  theme:
+    - mde
+id: mde_kozossegicsatornaink
+theme: mde
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:13e8da21-3b41-4eef-97d6-46e303efe343'
+settings:
+  id: 'block_content:13e8da21-3b41-4eef-97d6-46e303efe343'
+  label: 'Közösségi csatornáink'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

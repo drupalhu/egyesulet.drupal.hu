@@ -1,0 +1,22 @@
+name: 'MDE'
+type: theme
+description: 'MDE subtheme based on Bootstrap 4 theme.'
+core_version_requirement: '^8.8 || ^9'
+'base theme': bootstrap4
+libraries:
+  - mde/global-styling
+stylesheets-remove:
+  - '@bootstrap4/css/style.css'
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  front_content1: 'Front content 1'
+  front_content2: 'Front content 2'
+  front_content3: 'Front content 3'
+  front_content4: 'Front content 4'
+  front_content5: 'Front content 5'
+  front_content6: 'Front content 6'
+  footer: Footer

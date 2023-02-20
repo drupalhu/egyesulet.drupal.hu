@@ -1,0 +1,22 @@
+uuid: 288cc4ed-8627-4061-8d8f-350189762535
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - mde
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: mde_breadcrumbs
+theme: mde
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

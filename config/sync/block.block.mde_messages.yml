@@ -1,0 +1,22 @@
+uuid: bffc9e5c-7b2e-4869-95bc-7f67cfafb5a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mde
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: mde_messages
+theme: mde
+region: content
+weight: -1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

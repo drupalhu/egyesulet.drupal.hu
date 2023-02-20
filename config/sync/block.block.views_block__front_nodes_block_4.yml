@@ -1,0 +1,24 @@
+uuid: f5225a41-8ed1-482d-8bdc-907db5374261
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.front_nodes
+  module:
+    - views
+  theme:
+    - mde
+id: views_block__front_nodes_block_4
+theme: mde
+region: front_content2
+weight: -10
+provider: null
+plugin: 'views_block:front_nodes-block_4'
+settings:
+  id: 'views_block:front_nodes-block_4'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

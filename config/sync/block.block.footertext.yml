@@ -1,0 +1,25 @@
+uuid: ad800a58-4fa2-49f8-8bce-3b6c9b0c4e7c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:be35531b-c95d-47bd-b70b-cc40e1c1c293'
+  module:
+    - block_content
+  theme:
+    - mde
+id: footertext
+theme: mde
+region: footer
+weight: -10
+provider: null
+plugin: 'block_content:be35531b-c95d-47bd-b70b-cc40e1c1c293'
+settings:
+  id: 'block_content:be35531b-c95d-47bd-b70b-cc40e1c1c293'
+  label: 'Footer text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

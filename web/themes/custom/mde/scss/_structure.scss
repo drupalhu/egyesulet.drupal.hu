@@ -1,0 +1,161 @@
+header {
+  height: 540px;
+  background: #d7d7d7 url(../img/header-bg.jpg) no-repeat center bottom scroll;
+  background-size: cover;
+  margin-top: 0;
+
+  .col-auto {
+    position: unset;
+  }
+}
+.region-header {
+  flex-direction: column;
+  align-items: center;
+}
+.navbar-brand {
+  .site-logo {
+    margin-bottom: 2em;
+
+    img {
+      margin: 1rem 1rem 0 0;
+    }
+  }
+  a.site-title {
+    padding: 0;
+    letter-spacing: 1px;
+  }
+
+  div {
+
+    width: 100%;
+    padding: 0;
+  }
+}
+
+#block-mobilelogo {
+  clear: both;
+  margin-bottom: 2em;
+  img {
+    width: 120px;
+    height: auto;
+  }
+}
+
+button.navbar-toggler {
+  position: absolute;
+  top: 70px;
+  right: 5px;
+}
+
+.navi {
+  width: 100%;
+}
+#navbarSupportedContent {
+  background-color: $dblue;
+  margin-top:-3.4em;
+  width: 100%;
+
+  text-align: center ;
+  a {
+    color: #fff;
+  }
+}
+.region-header {
+  display: flex;
+  justify-content: center;
+}
+
+#branding,
+#site-slogan,
+#social,
+#footer,
+h4,
+.section-title,
+.member,
+.project-item {
+  text-align: center;
+}
+
+.benefit .field-content {
+  display: flex;
+}
+#projects {
+  article .field--name-body {
+    display: flex;
+  }
+}
+
+#join .field--name-body {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#block-csatlakozz {
+  margin-top: 3rem;
+}
+
+.join-step {
+  background: $dblue;
+  color: #fff;
+  padding: 1em;
+  font-weight: bold;
+}
+
+footer {
+  background: $dblue;
+  color: #fff;
+  margin-top: 4.66667em;
+  padding-top: 3.11111em;
+  padding-bottom: 3.11111em;
+  font-size: 85%;
+  text-align: center;
+}
+
+section {
+  margin-top: 3.11111em;
+  margin-bottom: 1.55556em;
+  clear: both;
+
+  .field-content {
+    display: flex;
+  }
+}
+.navbar {
+  color: #fff;
+  padding: 0;
+  background-image: linear-gradient(to bottom, transparent 60px, #007DBF 60px, #007DBF 110px, transparent 110px, transparent);
+
+  > .container {
+    background-size: 50px 50px;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+  }
+}
+.navbar {
+  .navbar-brand {
+    display: flex;
+    margin-right: 0;
+  }
+}
+
+.site-logo {
+  width: 120px;
+
+  img {
+    z-index:10;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.views-field-body {
+  .field-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+

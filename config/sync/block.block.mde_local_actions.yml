@@ -1,0 +1,20 @@
+uuid: 537f34bb-d7c5-42d7-a674-b8e172764a48
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mde
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: mde_local_actions
+theme: mde
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

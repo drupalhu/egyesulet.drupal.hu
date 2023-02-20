@@ -1,0 +1,25 @@
+uuid: 3aa1fe1c-b822-4e4e-845d-34ddd3c00415
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:36b89cd1-1989-4cb7-85e9-e9b237c35b71'
+  module:
+    - block_content
+  theme:
+    - mde
+id: csatlakozz
+theme: mde
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:36b89cd1-1989-4cb7-85e9-e9b237c35b71'
+settings:
+  id: 'block_content:36b89cd1-1989-4cb7-85e9-e9b237c35b71'
+  label: Csatlakozz
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

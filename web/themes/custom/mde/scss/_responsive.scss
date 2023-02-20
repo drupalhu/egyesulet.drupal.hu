@@ -1,0 +1,80 @@
+@media (min-width: 768px) {
+  .join-step {
+    border: 20px solid white;
+  }
+
+  #header {
+    padding-top: 32px;
+    position: relative;
+    height: 640px;
+  }
+  .navbar-brand a.site-title{
+    font-size: 1.5rem;
+
+  }
+
+  #block-mobilelogo img {
+    display: none;
+  }
+
+  #navbarSupportedContent {
+   grid-column: -1;
+    grid-row: 2;
+    background: transparent;
+
+    margin-top: 0;
+    a {
+      color: #fff;
+    }
+  }
+
+  .branding {
+    grid-column: 1;
+  }
+
+  .navbar .navbar-brand {
+    display: flex;
+    div {
+      background: transparent;
+    }
+    .site-logo img {
+      width: 120px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  #block-csatlakozz {
+    margin-top: 6em;
+    h2 a {
+      font-size: 44px;
+    }
+  }
+
+  .elnokseg {
+     flex-direction: row;
+   }
+
+  .views-field-body .field-content {
+    flex-direction: row;
+  }
+  .navbar {
+    padding-right: 0;
+    padding-left: 0;
+    background-image: linear-gradient(to bottom, transparent 75px, $dblue 75px, $dblue 135px, transparent 135px, transparent);
+
+    div {
+      position: relative;
+    }
+    .container {
+      display: flex;
+    }
+  }
+  .navbar-expand .navbar-nav {
+    flex-direction: row;
+  }
+  .join-step:first-child  li {
+    display: list-item;
+    margin-bottom: 1rem;
+  }
+}
