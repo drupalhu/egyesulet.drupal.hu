@@ -1,0 +1,24 @@
+uuid: 842c6831-06b1-41a7-88d3-2edf4dbe67be
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - views
+  theme:
+    - mde
+id: views_block__news_block_1
+theme: mde
+region: front_content1
+weight: -10
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

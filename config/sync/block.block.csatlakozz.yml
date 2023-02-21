@@ -17,8 +17,8 @@ plugin: 'block_content:36b89cd1-1989-4cb7-85e9-e9b237c35b71'
 settings:
   id: 'block_content:36b89cd1-1989-4cb7-85e9-e9b237c35b71'
   label: Csatlakozz
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

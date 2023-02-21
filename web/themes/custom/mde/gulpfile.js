@@ -1,28 +1,40 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
-const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass')(require('sass'));
+
 const sourcemaps = require('gulp-sourcemaps');
 const cssnano = require('cssnano');
-const autoprefixer = require('autoprefixer');
+
+sass.compiler = require('sass');
 
 function style() {
   return gulp.src('./scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-   /* .pipe(postcss([autoprefixer(), cssnano() ]))*/
+   /* .pipe(postcss( cssnano() ))*/
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./css'))
-    .pipe(browserSync.stream());
+
 }
+
 function watch() {
-    browserSync.init({
-      proxy: {
-        target: "http://egyesulet.loc",
-      }
-    });
-    gulp.watch('./scss/**/*.scss', style)
+    gulp.watch('./scss/**/*.scss', style);
+}
+
+
+function style_on_node() {
+  return gulp.src('./scss/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    /* .pipe(postcss( cssnano() ))*/
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('./css'));
+}
+
+function watch_on_node() {
+  gulp.watch('./scss/**/*.scss', style_on_node);
 }
 
 exports.style  = style;
 exports.watch = watch;
+exports.watch_on_node = watch_on_node;
 exports.default = watch;

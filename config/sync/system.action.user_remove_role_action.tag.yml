@@ -1,0 +1,14 @@
+uuid: 2674cf9f-24c6-4c0b-a68e-5da6321ff1c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tag
+  module:
+    - user
+id: user_remove_role_action.tag
+label: 'Remove the tag role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: tag

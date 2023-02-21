@@ -1,0 +1,14 @@
+uuid: 5a17799b-56e0-4ad0-9bfa-1125eae25973
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tag
+  module:
+    - user
+id: user_add_role_action.tag
+label: 'Add the tag role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: tag

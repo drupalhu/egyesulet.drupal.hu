@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
 uuid: d5e958c0-198f-4463-8f16-8ba0f34c3487
 name: 'Magyar Drupal Egyesület'
 mail: it@pandelon.net
@@ -8,7 +11,4 @@ page:
   front: /node/5
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
