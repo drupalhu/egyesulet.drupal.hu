@@ -25,7 +25,7 @@
         "drupal/core-recommended": "^9.2",
         "drupal/metatag": "^1.22",
         "drupal/simplei": "^1.2",
-        "drush/drush": "^10.5"
+        "drush/drush": "^11.5"
     },
     "conflict": {
         "drupal/drupal": "*"
