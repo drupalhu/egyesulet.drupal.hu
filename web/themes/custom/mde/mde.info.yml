@@ -1,7 +1,7 @@
 name: 'MDE'
 type: theme
 description: 'MDE subtheme based on Bootstrap 4 theme.'
-core_version_requirement: '^8.8 || ^9'
+core_version_requirement: ^9.4 || ^10
 'base theme': bootstrap4
 libraries:
   - mde/global-styling
